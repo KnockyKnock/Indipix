@@ -1,0 +1,173 @@
+body {
+    background-color: #ef5350;
+    height: auto;
+    margin: 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    
+}
+
+button, input, textarea, select {
+    font-size: 16px;
+}
+
+header {
+    width: auto;
+    background-color: #e94643;
+    border-top: 22px solid #04e4a2;
+}
+
+footer {
+    background-color: #fefcf2;
+    clear: both;
+}
+
+.header-content, .footer-content, .main, .form-main{
+    width: 1200px;
+    margin: auto;
+}
+
+.header-content, .footer-content {
+    min-height: 78px;
+}
+
+/*Стили для шапки и её элементов */
+
+.menu {   
+    margin: 20px 3px;
+    list-style-type: none;
+}
+
+.menu li {
+    border-bottom: 3px solid #fdd835;
+}
+
+.menu a {
+    color: #fff;
+    margin: auto;
+    text-decoration: none;
+}
+
+.logo {
+    color: #fff;
+    font-size: 35px;
+    margin: 17px;
+    text-decoration: none;
+}
+
+/*Стили для верхней части сайта */
+
+.main-content{
+    display: table;
+    margin: auto;
+    margin-bottom: 50px;
+    min-height: 582px;
+    max-width: 50%;
+}
+
+.text {
+    color: #f9fbe8;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: justify;
+}
+
+.text button {
+    border: 1px solid #04e4a2;
+    border-radius: 5px;
+    background-color: #04e4a2;
+    color: #fff;
+    margin-left: 435px;
+    height: 54px;
+    width: 165px;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+/*Стили для нижней части сайта*/
+
+.white-body {
+    background-color: #fff;
+    clear: both;
+    height: auto;
+    min-height: 394px;
+    padding-bottom: 20px;
+    width: auto;
+}
+
+.form {
+    min-height: 394px;
+    margin: auto;
+    width: 50%;
+}
+
+.inputs {
+    margin-left: 40px;
+}
+
+.form-main {
+    min-height: 394px;
+}
+
+.inputs input, .inputs select, .inputs textarea {
+    border: 3px solid #e3f2fd;
+    border-radius: 5px;
+    padding: 17px 0px 17px 22px;
+    margin: 9px 10px;
+}
+
+.inputs input {
+    height: 16px;
+    width: 228px;
+}
+
+.inputs select {
+    height: 58px;
+    width: 256px;
+}
+
+.inputs textarea {
+    height: 66px;
+    resize: none;
+    width: 508px;
+}
+
+.inputs button {
+    border: 1px solid #ef5350;
+    border-radius: 9px;
+    background-color: #ef5350;
+    color: #fff;
+    height: 45px;
+    margin-left: 426px;
+    width: 120px;
+}
+
+.inputs p {
+    color: #ff8a80;
+    margin-left: 35px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.copywrite {
+    font-size: 14px;
+    margin: 30px;
+}
+
+.email {
+    margin-top: 5px;
+    margin-right: 310px;
+}
+
+.email a{
+    color: #000;
+    font-size: 18px;
+    text-decoration: none
+}
+

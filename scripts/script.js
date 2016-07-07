@@ -1,7 +1,7 @@
 $(document).ready(function() {
-    $('header .menu a').each(function() {
-        if ($(this).attr('href')==document.location.pathname) { 
-            $(this).addClass('active');
-        }
-    });
+	$('.menu li').each(function () {
+		if (this.getElementsByTagName("a")[0].href == location.href) {
+			this.className = "active";
+		}
+	});
 })

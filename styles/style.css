@@ -8,6 +8,7 @@ body {
 }
 
 button, input, textarea, select {
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
 }
 
@@ -31,26 +32,41 @@ footer {
     min-height: 78px;
 }
 
+.right-content {
+    float: right;
+}
+
+.left-content {
+    float: left;
+}
+
 /*Стили для шапки и её элементов */
 
-.menu {   
+header .menu {   
     margin: 20px 3px;
     list-style-type: none;
 }
 
-.menu li {
+header .menu li {
+    display: inline;
+    margin-left: 40px;
+}
+
+header .menu li.active {
     border-bottom: 3px solid #fdd835;
 }
 
-.menu a {
+header .menu a {
     color: #fff;
     margin: auto;
     text-decoration: none;
 }
 
-.logo {
+header .logo {
     color: #fff;
+    display: block;
     font-size: 35px;
+    font-weight: bold;
     margin: 17px;
     text-decoration: none;
 }
@@ -82,78 +98,90 @@ footer {
     width: 165px;
 }
 
-.right {
-    float: right;
-}
-
-.left {
-    float: left;
-}
-
 /*Стили для нижней части сайта*/
 
-.white-body {
+.contact-main {
     background-color: #fff;
     clear: both;
     height: auto;
     min-height: 394px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     width: auto;
 }
 
+.form-main:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 .form {
-    min-height: 394px;
     margin: auto;
     width: 50%;
 }
 
-.inputs {
-    margin-left: 40px;
+.inputs-area {
+    font-size: 0px;
+    padding: 0px;
 }
 
-.form-main {
-    min-height: 394px;
+.inputs-area .right-inputs, .inputs-area .left-inputs {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 50%;
+    
 }
 
-.inputs input, .inputs select, .inputs textarea {
+.inputs-area .right-inputs {
+    padding-left: 10px;
+}
+
+.inputs-area input, .inputs-area select, .inputs-area textarea {
     border: 3px solid #e3f2fd;
     border-radius: 5px;
-    padding: 17px 0px 17px 22px;
-    margin: 9px 10px;
+    box-sizing: border-box;
+    padding: 30px 45px 30px 22px;
+    margin-bottom: 10px;
 }
 
-.inputs input {
-    height: 16px;
-    width: 228px;
+.inputs-area input {
+    width: 100%;
 }
 
-.inputs select {
-    height: 58px;
-    width: 256px;
-}
-
-.inputs textarea {
-    height: 66px;
+.inputs-area textarea {
+    min-height: 150px;
     resize: none;
-    width: 508px;
+    width: 100%;
+} 
+
+.inputs-area select {
+    background-color: #fff;
+    padding-right: 103px;
+    padding-bottom: 28px;
+    width: 100%
 }
 
-.inputs button {
+
+.inputs-area button {
     border: 1px solid #ef5350;
     border-radius: 9px;
     background-color: #ef5350;
     color: #fff;
-    height: 45px;
-    margin-left: 426px;
-    width: 120px;
+    padding: 20px 50px;
 }
 
-.inputs p {
+.form p {
     color: #ff8a80;
     margin-left: 35px;
     margin-top: 20px;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
 }
+
+.button-area {
+    text-align: right;
+}
+
+/*Стили для футера*/
 
 .copywrite {
     font-size: 14px;

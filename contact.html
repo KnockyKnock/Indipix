@@ -7,22 +7,25 @@
     <title>Indipixel</title>
     <link rel="stylesheet" href="styles/style.css">
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 </head>
 
 <body>
 
         <header>
             <div class="header-content">
-                <a href="#"><div class="left logo"><b>indipixel</b></div></a>
-                <ul class="menu right">
-                    <li><a href="#">Contact us</a></li>
+                <div class="left-content"><a href="#" class="logo">indipixel</a></div>
+                <ul class="menu right-content">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li class="active"><a href="contact.html">Contact us</a></li>
                 </ul>
             </div>
         </header>
         
         <div class="main">
-            <div class="left"></div>
-            <div class="main-content right">
+            <div class="left-content"></div>
+            <div class="main-content right-content">
                 <div class="text">
                     <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi posuere sodales ultricies.</h2>
                     <p>Ut auctor fringilla odio eu imperdiet. Nulla facilisi. Cras erat lorem, tincidunt at ultricies et, ultrices eget diam. Morbi laoreet auctor justo, ut interdum tortor iaculis nec. Ut aliquam libero mi, ut congue ligula ultricies vitae. Integer blandit maximus lacus, a tincidunt lacus pulvinar ut. In consequat dignissim lacus vitae molestie. Donec et blandit dui, quis vulputate risus. Ut ac ante nec augue efficitur laoreet vitae at nulla. Nullam aliquam iaculis purus, efficitur blandit nisi hendrerit nec. In sagittis diam leo, sed maximus leo faucibus a. Sed consequat vehicula auctor.
@@ -35,19 +38,25 @@
             <p></p>
         </div>
         
-        <div class="white-body">
+        <div class="contact-main">
             <div class="form-main">
-                <div class="form right">
-                    <div class="inputs">
-                        <p>Lets Talk</p>
-                        <input type="text" name="first_name" placeholder="First Name"/>
-                        <input type="text" name="last_name" placeholder="Last Name"/>
-                        <input type="text" name="email_address" placeholder="Email Address"/>
-                        <select size="1" name="app_design">
-                            <option disabled>App Design</option>
-                        </select>
-                        <textarea name="query" placeholder="Type your query here" readonly></textarea>
-                        <button name="send_button" type="submit">Send</button>
+                <div class="form right-content">
+                    <p>Lets Talk</p>
+                    <div class="inputs-area">
+                        <div class="left-inputs">
+                            <input type="text" name="first_name" placeholder="First Name"/>
+                            <input type="text" name="email_address" placeholder="Email Address"/>
+                        </div>
+                        <div class="right-inputs">
+                           <input type="text" name="last_name" placeholder="Last Name"/> 
+                           <select size="1" name="app_design">
+                            <option disabled selected>App Design</option>
+                            </select>
+                        </div>
+                        <textarea name="query" placeholder="Type your query here"></textarea>
+                        <div class="button-area">
+                            <button name="send_button" type="submit">Send</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -55,13 +64,14 @@
         
         <footer>
             <div class="footer-content">
-                <div class="copywrite left">© 2015 indipixel design</div>
-                <div class="email right">
-                    <p><a href="mailto:contact@youremail.com">contact@youremail.com</a></p>
+                <div class="copywrite left-content">© 2015 indipixel design</div>
+                <div class="email right-content">
+                    <p><a href="mailto:contact@youremail.com">contact@youremail.comi</a></p>
                 </div>
             </div>
         </footer>
-
+        
+    <script type="text/javascript" src="scripts/script.js"></script>
     
 </body>
 

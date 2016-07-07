@@ -1,6 +1,5 @@
 body {
     background-color: #ef5350;
-    height: auto;
     margin: 0px;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 20px;
@@ -73,12 +72,30 @@ header .logo {
 
 /*Стили для верхней части сайта */
 
+.main:after {
+    background-color: #ef5350;
+    clear: both;
+    content: "";
+    display: block;
+}
+
 .main-content{
     display: table;
     margin: auto;
     margin-bottom: 50px;
     min-height: 582px;
     max-width: 50%;
+}
+
+.image-phone {
+    background-image: url(../images/greenDiagonal.png);
+    background-repeat: no-repeat;
+    width: 50%;
+}
+
+.image-phone img {
+
+    
 }
 
 .text {
@@ -88,14 +105,14 @@ header .logo {
     text-align: justify;
 }
 
-.text button {
+.text a.button {
     border: 1px solid #04e4a2;
     border-radius: 5px;
     background-color: #04e4a2;
     color: #fff;
-    margin-left: 435px;
-    height: 54px;
-    width: 165px;
+    text-decoration: none;
+    padding: 20px 50px;
+    
 }
 
 /*Стили для нижней части сайта*/
@@ -162,6 +179,10 @@ header .logo {
 }
 
 
+.button-area {
+    text-align: right;
+}
+
 .inputs-area button {
     border: 1px solid #ef5350;
     border-radius: 9px;
@@ -177,10 +198,6 @@ header .logo {
     margin-bottom: 20px;
 }
 
-.button-area {
-    text-align: right;
-}
-
 /*Стили для футера*/
 
 .copywrite {
@@ -190,7 +207,6 @@ header .logo {
 
 .email {
     margin-top: 5px;
-    margin-right: 310px;
 }
 
 .email a{

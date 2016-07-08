@@ -1,6 +1,6 @@
 $(document).ready(function() {
-	$('.menu li').each(function () {
-		if (this.getElementsByTagName("a")[0].href == location.href) {
+	$('.menu li a').each(function () {
+		if (this.href == location.href) {
 			this.className = "active";
 		}
 	});

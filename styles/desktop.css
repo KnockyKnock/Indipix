@@ -1,13 +1,16 @@
+html {
+    font-size: 20px;
+}
+
 body {
     background-color: #ef5350;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 20px;
     margin: 0px;
 }
 
 button, input, textarea, select {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 16px;
+    font-size: 0.8rem;
 }
 
 header {
@@ -25,10 +28,6 @@ footer {
     width: 1200px;
     margin: auto;
 }
-
-/*.header-content, .footer-content {*/
-/*    min-height: 78px;*/
-/*}*/
 
 .right-content {
     float: right;

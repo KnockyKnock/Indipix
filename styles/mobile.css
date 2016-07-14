@@ -1,5 +1,9 @@
 @media screen and (max-width: 480px) {
     
+    html {
+        font-size: 16px;
+    }
+    
     .header-content, .footer-content, .main, .form-main {
         width: 100%;
     }

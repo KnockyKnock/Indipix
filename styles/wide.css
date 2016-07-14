@@ -1,0 +1,28 @@
+@media screen and (max-width: 1200px) {
+    
+    .header-content, .footer-content, .main, .form-main {
+        box-sizing: border-box;
+        width: 100%;
+    }
+    
+    .header-content, .main-content, .form-main, .footer-content {
+        box-sizing: border-box;
+        padding: 2%;
+    }
+    
+    .image-phone {
+        left: 0px;
+        top: 300px;
+        width: 50%
+    }
+    
+    .main-content {
+        width: 50%;
+    }
+    
+    .form {
+        float: none;
+        width: 100%;
+    }
+    
+}

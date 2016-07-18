@@ -95,10 +95,15 @@ header .logo {
     background-repeat: no-repeat; 
     padding-bottom: 35px;
     position: relative;
+    transition: all 1s;
     top: 350px;
     left: -100px;
     text-align: center;
     width: 60%;
+}
+
+.image-phone img {
+    max-width: 100%;
 }
 
 .text {
@@ -223,3 +228,16 @@ footer:after {
     text-decoration: none
 }
 
+
+
+.small {
+    transition: all 1s;
+    width: 1%;
+    top: 0px;
+    left: 0px;
+}
+
+.wide {
+    transition: width 500;
+    width: 100%;
+}

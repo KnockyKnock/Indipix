@@ -90,16 +90,19 @@ header .logo {
     width: 40%;
 }
 
+.main-left {
+    width: 60%;
+}
+
 .image-phone {
     background-image: url(../images/greenDiagonal.png);
     background-repeat: no-repeat; 
     padding-bottom: 35px;
     position: relative;
     transition: all 1s;
-    top: 350px;
+    top: 150px;
     left: -100px;
     text-align: center;
-    width: 60%;
 }
 
 .image-phone img {
@@ -123,6 +126,16 @@ header .logo {
     padding: 20px 50px;
     text-decoration: none;
     
+}
+
+.main-left button[name="calc-button"] {
+    border: 1px solid #04e4a2;
+    border-radius: 5px;
+    background-color: #04e4a2;
+    color: #fff;
+    margin-bottom: 10px;
+    outline: none;
+    padding: 20px 50px;
 }
 
 /*Стили для нижней части сайта*/
@@ -189,12 +202,13 @@ header .logo {
     text-align: right;
 }
 
-.inputs-area button {
+.inputs-area button, button[name="result-button"]{
     border: 1px solid #ef5350;
     border-radius: 9px;
     background-color: #ef5350;
     color: #fff;
     display: inline-block;
+    outline: none;
     padding: 20px 50px;
 }
 
@@ -240,4 +254,8 @@ footer:after {
 .wide {
     transition: width 500;
     width: 100%;
+}
+
+button[type="button"].disable-button {
+    background-color: #D3D3D3;
 }

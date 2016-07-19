@@ -1,5 +1,6 @@
 $(document).ready(function() {
-    $(".calc-area button").click(function () {
+    
+    $(".calc-area button[name='result-button']").click(function () {
         var tempMinuts = $(".calc-area input[name='minuts']").val(),
             tempType = $(".calc-area select").val();
         calculator.quantityOfMinuts = tempMinuts;
@@ -7,6 +8,12 @@ $(document).ready(function() {
         var result = calculator.calculate();
         $(".calc-area input[name='result']").val(result);
     })
+    
+    $(".main-left button[name='calc-button']").click(function () {
+        $(this).toggleClass("disable-button");
+        $(".calc-area").toggleClass("hide");
+    });
+    
 });
 
 var calculator = {

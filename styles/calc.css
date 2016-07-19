@@ -1,0 +1,35 @@
+.calc-area {
+    background-color: #fff;
+    box-sizing: border-box;
+    transition: all 1s;
+    text-align: center;
+    padding: 3%;
+    width: 90%;
+}
+
+.hide {
+    transition: all 0.5s;
+    padding: 0;
+    height: 0;
+    width: 0;
+}
+
+.hide div {
+    display: none;
+}
+
+.calc-area label {
+    margin-right: 10px;
+}
+
+.calc-area div {
+    margin-bottom: 20px;
+}
+
+.calc-area input[type="text"], .calc-area select {
+    border: 3px solid #e3f2fd;
+    border-radius: 5px;
+    outline: none;
+    padding: 10px 10px;
+}
+

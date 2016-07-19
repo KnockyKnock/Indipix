@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Design and build web & mobile apps">
     <meta name="keywords" content="indipixel, contact, design, web apps, mobile apps">
+    <link rel="stylesheet" href="styles/calc.css">   
     <link rel="stylesheet" href="styles/desktop.css">
     <link rel="stylesheet" href="styles/wide.css">
     <link rel="stylesheet" href="styles/tablet.css">
@@ -32,8 +33,35 @@
     </header>
     
     <div class="main">
-        <div class="left-content image-phone">
-            <img src="images/phone.png" alt="Phone" />
+        <div class="left-content main-left">
+            
+            <button type="button" name="calc-button">Calculator</button>
+            
+            <div class="calc-area hide">
+                <div>
+                    <label>Введите количество минут: </label>
+                    <input type="text" name="minuts" placeholder="Введите число"/>
+                </div>
+                <div>
+                    <label>Выберите тип связи: </label>
+                    <select name="commun_type">
+                        <option>3G</option>
+                        <option>4G</option>
+                        <option>Спутник</option>
+                    </select>
+                </div>
+                <div>
+                    <button type="button" name="result-button">Рассчитать</button>
+                </div>
+                <div>
+                    <label>Результат: </label>
+                    <input type="text" name="result" placeholder="Результат"/>
+                </div>
+            </div>
+            
+            <div class="image-phone">
+                <img src="images/phone.png" alt="Phone" />    
+            </div>
         </div> 
         <div class="main-content right-content">
             <div class="text">
@@ -87,6 +115,7 @@
     </footer>
         
     <script type="text/javascript" src="scripts/script.js"></script>
+    <script type="text/javascript" src="scripts/calc.js"></script>
     
 </body>
 

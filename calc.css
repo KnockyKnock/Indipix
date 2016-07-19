@@ -21,5 +21,6 @@ body {
 .calc-area input[type="text"], .calc-area button, .calc-area select {
     border: 1px solid #000;
     border-radius: 5px;
+    outline: none;
     padding: 6px;
 }
